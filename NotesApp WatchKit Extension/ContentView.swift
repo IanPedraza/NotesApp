@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        VStack (spacing: 10.0) {
+            NavigationLink(
+                Strings.NEW_NOTE,
+                destination: AddNoteView()
+            )
+            .foregroundColor(.blue)
+            
+            ListNotesView()
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

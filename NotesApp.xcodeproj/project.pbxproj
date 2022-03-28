@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A025CFFD27EE873E00B730DF /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025CFFC27EE873E00B730DF /* AddNoteView.swift */; };
+		A025D00127EE8D3400B730DF /* AddNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025D00027EE8D3400B730DF /* AddNoteViewModel.swift */; };
+		A060562027F12B5500E8770A /* ListNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060561F27F12B5500E8770A /* ListNotesView.swift */; };
+		A060562327F12E4900E8770A /* DetailNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060562227F12E4900E8770A /* DetailNote.swift */; };
+		A060562627F1302500E8770A /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060562527F1302500E8770A /* NoteItem.swift */; };
+		A060562827F134DF00E8770A /* ListNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060562727F134DF00E8770A /* ListNotesViewModel.swift */; };
+		A060562C27F1360400E8770A /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060562B27F1360400E8770A /* DummyData.swift */; };
+		A060562E27F136B100E8770A /* NotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060562D27F136B100E8770A /* NotesManager.swift */; };
+		A060563027F13FCC00E8770A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A060562F27F13FCC00E8770A /* Strings.swift */; };
+		A08705CA27ED4EB9004B1658 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08705C927ED4EB9004B1658 /* Note.swift */; };
 		A0A8A10A27A8A0BD00A02A07 /* NotesApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A0A8A10927A8A0BD00A02A07 /* NotesApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A0A8A10F27A8A0BE00A02A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A8A10E27A8A0BE00A02A07 /* Assets.xcassets */; };
 		A0A8A11527A8A0BE00A02A07 /* NotesApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A0A8A11427A8A0BE00A02A07 /* NotesApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -60,6 +70,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A025CFFC27EE873E00B730DF /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		A025D00027EE8D3400B730DF /* AddNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewModel.swift; sourceTree = "<group>"; };
+		A060561F27F12B5500E8770A /* ListNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesView.swift; sourceTree = "<group>"; };
+		A060562227F12E4900E8770A /* DetailNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNote.swift; sourceTree = "<group>"; };
+		A060562527F1302500E8770A /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
+		A060562727F134DF00E8770A /* ListNotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesViewModel.swift; sourceTree = "<group>"; };
+		A060562B27F1360400E8770A /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		A060562D27F136B100E8770A /* NotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesManager.swift; sourceTree = "<group>"; };
+		A060562F27F13FCC00E8770A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		A08705C927ED4EB9004B1658 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		A0A8A10527A8A0BD00A02A07 /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A8A10927A8A0BD00A02A07 /* NotesApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotesApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A8A10E27A8A0BE00A02A07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,9 +103,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A025CFFE27EE8CF800B730DF /* feature_add_note */ = {
+			isa = PBXGroup;
+			children = (
+				A025CFFC27EE873E00B730DF /* AddNoteView.swift */,
+				A025D00027EE8D3400B730DF /* AddNoteViewModel.swift */,
+			);
+			path = feature_add_note;
+			sourceTree = "<group>";
+		};
+		A025CFFF27EE8D1300B730DF /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A08705C927ED4EB9004B1658 /* Note.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		A060561C27F12B1800E8770A /* feature_list_notes */ = {
+			isa = PBXGroup;
+			children = (
+				A060561F27F12B5500E8770A /* ListNotesView.swift */,
+				A060562727F134DF00E8770A /* ListNotesViewModel.swift */,
+			);
+			path = feature_list_notes;
+			sourceTree = "<group>";
+		};
+		A060562127F12E3300E8770A /* feature_detail_note */ = {
+			isa = PBXGroup;
+			children = (
+				A060562227F12E4900E8770A /* DetailNote.swift */,
+			);
+			path = feature_detail_note;
+			sourceTree = "<group>";
+		};
+		A060562427F1300E00E8770A /* components */ = {
+			isa = PBXGroup;
+			children = (
+				A060562527F1302500E8770A /* NoteItem.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		A060562A27F135F400E8770A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A060562B27F1360400E8770A /* DummyData.swift */,
+				A060562D27F136B100E8770A /* NotesManager.swift */,
+				A060562F27F13FCC00E8770A /* Strings.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		A0A8A0FE27A8A0BD00A02A07 = {
 			isa = PBXGroup;
 			children = (
+				A060562A27F135F400E8770A /* common */,
+				A025CFFF27EE8D1300B730DF /* models */,
+				A060562427F1300E00E8770A /* components */,
+				A060562127F12E3300E8770A /* feature_detail_note */,
+				A060561C27F12B1800E8770A /* feature_list_notes */,
+				A025CFFE27EE8CF800B730DF /* feature_add_note */,
 				A0A8A10D27A8A0BD00A02A07 /* NotesApp WatchKit App */,
 				A0A8A11827A8A0BE00A02A07 /* NotesApp WatchKit Extension */,
 				A0A8A10627A8A0BD00A02A07 /* Products */,
@@ -258,9 +336,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A025D00127EE8D3400B730DF /* AddNoteViewModel.swift in Sources */,
+				A025CFFD27EE873E00B730DF /* AddNoteView.swift in Sources */,
+				A060562027F12B5500E8770A /* ListNotesView.swift in Sources */,
+				A060562627F1302500E8770A /* NoteItem.swift in Sources */,
 				A0A8A11A27A8A0BE00A02A07 /* ContentView.swift in Sources */,
+				A060562327F12E4900E8770A /* DetailNote.swift in Sources */,
+				A060562827F134DF00E8770A /* ListNotesViewModel.swift in Sources */,
+				A060563027F13FCC00E8770A /* Strings.swift in Sources */,
 				A0A8A11C27A8A0BE00A02A07 /* NotesAppApp.swift in Sources */,
 				A0A8A11E27A8A0BE00A02A07 /* ComplicationController.swift in Sources */,
+				A060562C27F1360400E8770A /* DummyData.swift in Sources */,
+				A08705CA27ED4EB9004B1658 /* Note.swift in Sources */,
+				A060562E27F136B100E8770A /* NotesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,12 +599,14 @@
 		A0A8A13027A8A0BF00A02A07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MSYHMP9FX5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ianpedraza.NotesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -524,12 +614,14 @@
 		A0A8A13127A8A0BF00A02A07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MSYHMP9FX5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ianpedraza.NotesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
